@@ -16,6 +16,7 @@
 .right-cart{
     display: flex;
     justify-content: right;
+    cursor: pointer;
 }
 .header{
     height: 80px;
@@ -110,6 +111,8 @@
     padding-top: 70px;
     display: flex;
     gap: 67px;
+    padding-bottom: 100px;
+    flex-wrap: wrap;
 }
 .card-product__title{
     font-size: 30px;
@@ -215,13 +218,74 @@
     padding-top: 40px;
    width: 292px;
 }
+.sub-menu{
+    right: -2px;
+    position: absolute;
+    top: 50px;
+    width: 114px;
+    height: 169px;
+    background-color: #fff;
+    box-shadow: 0px 4px 35px 0px rgba(168, 172, 176, 0.19);
+    z-index: 7;
+    display: none;
+}
+.right-cart:hover .sub-menu{
+     display:block;
+ }
+.right-cart:hover .right-cart__item svg{
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+    -webkit-transition: transform .2s cubic-bezier(0.4, 0, 0.2, 1);
+    -webkit-transition: -webkit-transform .2s cubic-bezier(0.4, 0, 0.2, 1);
+    transition: -webkit-transform .2s cubic-bezier(0.4, 0, 0.2, 1);
+    transition: transform .2s cubic-bezier(0.4, 0, 0.2, 1);
+    transition: transform .2s cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform .2s cubic-bezier(0.4, 0, 0.2, 1);
+}
 
 
 
+
+
+.right-cart:hover .sub-item{
+    display:block;
+}
+.sub-item{
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 160%;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    padding-top: 20px;
+    padding-right: 20px;
+    text-transform: uppercase;
+    display: block;
+
+
+
+}
+.sub-item:hover{
+    background: #EEE;
+    cursor: pointer;
+    display: block;
+}
 
 
 
 /*media settings*/
+@media only screen and (max-width: 1092px) {
+
+}
+
+
+
+
+
+
+
+
+
+
 @media only screen and (max-width: 1188px) {
     .shop-items{
         display: grid;
@@ -236,5 +300,9 @@
         grid-template-columns: auto;
         row-gap: 100px;
         align-items: center;
+    }
+    .card-content-two img{
+        width: 70%;
+        height: auto;
     }
 }
