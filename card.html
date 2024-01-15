@@ -10,14 +10,17 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,400;1,300&family=Lora&family=Open+Sans:ital,wght@0,300;0,400;0,600;1,300&family=Raleway:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
-<body>
+<body data-barba="wrapper">
+<div class="box"></div>
+<div class="wrapper">
+<div class="inner" data-barba="container" data-barba-namespace="about">
 <header class="header">
     <div class="container">
         <div class="top-navbar">
             <ul class="navbar">
-                <li class="navbar__item-active"><a href="#">Women</a></li>
-                <li class="navbar__item"><a href="#">Men</a></li>
-                <li class="navbar__item"><a href="#">Kids</a></li>
+                <li class="navbar__item"><a href="index.html">Home</a></li>
+                <li class="navbar__item-active"><a href="#">About</a></li>
+            <!--                <li class="navbar__item"><a href="#">Kids</a></li>-->
             </ul>
             <ul class="cart"><li class="cart-item"><img src="images/logo.png"> </li></ul>
             <ul class="right-cart"><li class="right-cart__item"><img src="images/dollar.svg"> </li>
@@ -34,6 +37,7 @@
         </div>
     </div>
 </header>
+
 <div class="main-card-section">
     <div class="container">
         <ul class="card-content">
@@ -70,11 +74,13 @@
     </div>
 </div>
 
+</div>
+</div>
 
-
-
-
+<script src="https://unpkg.com/@barba/core"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js"></script>
 <script src="app.js"></script>
 
 </body>
+
 </html>

@@ -8,30 +8,40 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,400;1,300&family=Lora&family=Open+Sans:ital,wght@0,300;0,400;0,600;1,300&family=Raleway:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,400;1,300&family=Lora&family=Open+Sans:ital,wght@0,300;0,400;0,600;1,300&family=Raleway:wght@300;400;500;600;700&display=swap"
+          rel="stylesheet">
 </head>
-<body>
+
+<body data-barba="wrapper">
+<div class="box"></div>
+<div class="wrapper">
+<div class="inner" data-barba="container" data-barba-namespace="home">
 <header class="header">
     <div class="container">
         <div class="top-navbar">
-        <ul class="navbar">
-            <li class="navbar__item-active"><a href="#">Women</a></li>
-            <li class="navbar__item"><a href="#">Men</a></li>
-            <li class="navbar__item"><a href="#">Kids</a></li>
-        </ul>
-        <ul class="cart"><li class="cart-item"><img src="images/logo.png"> </li></ul>
-        <ul class="right-cart"><li class="right-cart__item"><img src="images/dollar.svg"> </li>
-            <li class="right-cart__item"><svg xmlns="http://www.w3.org/2000/svg" width="8" height="4" viewBox="0 0 8 4" fill="none">
-                <path d="M1 0.5L4 3.5L7 0.5" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg> </li>
-            <ul class="sub-menu">
-                <li class="sub-item">$ Usd</li>
-                <li class="sub-item">$ eur</li>
-                <li class="sub-item">$ jpy</li>
+            <ul class="navbar">
+<!--                <li class="navbar__item-active"><a href="#">Women</a></li>-->
+                <li class="navbar__item"><a href="#">Home</a></li>
+                <li class="navbar__item"><a href="card.html">About</a></li>
             </ul>
-            <li class="right-basket"><img src="images/cart-icon.svg"> </li>
-        </ul>
-    </div>
+            <ul class="cart">
+                <li class="cart-item"><img src="images/logo.png"></li>
+            </ul>
+            <ul class="right-cart">
+                <li class="right-cart__item"><img src="images/dollar.svg"></li>
+                <li class="right-cart__item">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="8" height="4" viewBox="0 0 8 4" fill="none">
+                        <path d="M1 0.5L4 3.5L7 0.5" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </li>
+                <ul class="sub-menu">
+                    <li class="sub-item">$ Usd</li>
+                    <li class="sub-item">$ eur</li>
+                    <li class="sub-item">$ jpy</li>
+                </ul>
+                <li class="right-basket"><img src="images/cart-icon.svg"></li>
+            </ul>
+        </div>
     </div>
 </header>
 
@@ -39,39 +49,39 @@
     <div class="container">
         <h1 class="topic">Category name</h1>
         <ul class="shop-items">
-             <li class="shop-item"><img src="images/photo-1.png">
-            <p class="shop-item__text">Apollo Running Short</p>
-            <p class="shop-item__price">$50.00</p>
-          <a href="#">  <img class="empty-card" src="images/empty-cart.svg">
-          </a> </li>
+            <li class="shop-item"><img src="images/photo-1.png">
+                <p class="shop-item__text">Apollo Running Short</p>
+                <p class="shop-item__price">$50.00</p>
+                <a href="#"> <img class="empty-card" src="images/empty-cart.svg">
+                </a></li>
             <li class="shop-item"><img src="images/photo-2.png">
                 <p class="shop-item__text">Apollo Running Short</p>
                 <p class="shop-item__price">$50.00</p>
-                <a href="#">  <img class="empty-card" src="images/empty-cart.svg">
+                <a href="#"> <img class="empty-card" src="images/empty-cart.svg">
                 </a>
             </li>
             <li class="shop-item"><img src="images/photo-3.png">
                 <p class="shop-item__text">Apollo Running Short</p>
                 <p class="shop-item__price">$50.00</p>
-                <a href="#">  <img class="empty-card" src="images/empty-cart.svg">
+                <a href="#"> <img class="empty-card" src="images/empty-cart.svg">
                 </a>
             </li>
             <li class="shop-item"><img src="images/photo-5.png">
                 <p class="shop-item__text">Apollo Running Short</p>
                 <p class="shop-item__price">$50.00</p>
-                <a href="#">  <img class="empty-card" src="images/empty-cart.svg">
+                <a href="#"> <img class="empty-card" src="images/empty-cart.svg">
                 </a>
             </li>
             <li class="shop-item"><img src="images/photo-1.png">
                 <p class="shop-item__text">Apollo Running Short</p>
                 <p class="shop-item__price">$50.00</p>
-                <a href="#">  <img class="empty-card" src="images/empty-cart.svg">
+                <a href="#"> <img class="empty-card" src="images/empty-cart.svg">
                 </a>
             </li>
             <li class="shop-item"><img src="images/photo-6.png">
                 <p class="shop-item__text">Apollo Running Short</p>
                 <p class="shop-item__price">$50.00</p>
-                <a href="#">  <img class="empty-card" src="images/empty-cart.svg">
+                <a href="#"> <img class="empty-card" src="images/empty-cart.svg">
 
 
                 </a>
@@ -80,11 +90,10 @@
         </ul>
     </div>
 </div>
-
-
-
-
+</div>
+</div>
 <script src="app.js"></script>
-
+<script src="https://unpkg.com/@barba/core"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js"></script>
 </body>
 </html>
